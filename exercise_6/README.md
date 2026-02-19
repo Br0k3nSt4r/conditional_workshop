@@ -5,25 +5,24 @@ Programa para saber cual es el precio de venta de un producto
 ## Analisis
 
 ### Variable de entrada
-- n1= Primer Numero
-- n2= Segundo Numero
-- n3= Tercer Numero
+- P_C= Precio de Compra
 
 ### Procesamiento
-- mayor= Variable para Confirmar el Numero mayor
+- n= Valor
+- P_V= Precio de venta
 ---
-- $ if (n1>=n2 and n1>=n3): $
-- $     mayor= n1 $
-- $ elif (n2>=n1 and n2>=n3): $
-- $     mayor= n2 $
+- $ if (P_C<=3000): $
+- $    n= P_C*0.15 $
+- $    P_V= P_C+n $
 - $ else: $
-- $     mayor= n3 $
+- $    if (P_C>6000): $
+- $       n= P_C * 0.25 $
+- $       P_V= P_C+n $
+- $ else: $
+- $       P_V= P_C+500 $
 
 ### Variable de salida
-- El "n1" es el Mayor
-- El "n2" es el Mayor
-- El "n3" es el Mayor
-
+- El nuevo precio de venta
 ## Diseño
 
 ![Diagrama](diagram.png "Diagrama de Flujo")
